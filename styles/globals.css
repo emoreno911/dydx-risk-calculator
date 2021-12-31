@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+
+html,
+body {
+  background-color: #1c1c28;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: radial-gradient(currentColor 1px, transparent 1px),radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(20 * 1px) calc(20 * 1px);
+  background-position: 0 0,calc(10 * 1px) calc(10 * 1px); */
+}
+
+header, main, footer {
+  z-index: 10;
+  position: relative;
+}
+
+.color-alt {
+  color: #454258;
+}
+.bg-color-dark {
+  background-color: #171722;
+}
+.bg-color-accent {
+  background-color: #1c1c28;
+}
+.bg-color-alt {
+  background-color: #454258;
+}
+button.bg-color-alt:hover,
+a.bg-color-alt:hover {
+  background-color: #5d5a75;
+}
+a.market-selected {
+  box-shadow: 0px 0px 0px 2px inset #ffeb3b;
+  color: #ffeb3b;
+}
+
+.bg-target {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/img/target.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.15;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  z-index: 10000;
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
+}
+
+header a,
+footer a,
+footer span,
+footer h4 {
+  color: #fff;
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  z-index: 10;
+}
+.main table {
+  margin: 0 auto
+}
+.main table th,
+.main table td {
+  color: #fff;
+  padding: 15px 30px;
+}
+.main table tr:nth-child(odd) td {
+  background-color: #25122a;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0,0,0,.65);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window.open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  position: relative;
+}
+.modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 5px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+.modal-close svg {
+	width: 24px;
+	height: 24px;
+}
+.modal-iframe {
+  width: 960px;
+  height: 560px;
+}
+.modal-backdrop {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+  background-color: transparent;
+}
+
+
+.table-pos {
+  display: table
+}
+.table-pos > div.row {
+  display: table-row
+}
+.table-pos > div.row > div {
+  display: table-cell
+}
+.table-pos > div.row-header > div {
+  padding: 8px 0;
+  color: #888;
+}
+.table-pos > div.row > div > span {
+  display: block;
+  padding: 8px 0;
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+.table-pos > div:not(.row-header) > div > span {
+  background-color: #171722
+}
+.table-pos > div:not(.row-header) > div:first-child > span {
+  border-radius: 0.375rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.table-pos > div:not(.row-header) > div:last-child > span {
+  border-radius: 0.375rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Text Editable Input */
+.account-input-name {
+	display: inline;
+	position: relative;
+}
+.account-input-name input {
+	width: 0;
+	overflow: hidden;
+	padding: 0 2px;
+	background: transparent;
+	border: dashed 1px transparent;
+	color: #fff;
+	outline: none;
+  max-width: 100px;
+  text-align: right;
+	/* transition: all .15s ease; */
+}
+.account-input-name label {
+	display: block;
+	opacity: 0;
+	background-color: rgba(0,0,0,.3);
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: -16px;
+	font-size: .5em;
+	padding: 0 4px;
+	transition: opacity .15s ease;
+}
+.account-input-name button {
+	margin-left: 8px;
+  background: #454258;
+  color: #fff;
+  font-size: .75em;
+  cursor: pointer;
+  padding: 1px;
+  border: solid 1px #454258;
+  border-radius: 4px;
+}
+.account-input-name button:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.account-input-name input:focus {
+	width: 320px;
+	border-color: rgba(255, 255, 255, 0.3);
+}
+.account-input-name input:focus ~ label {
+	opacity: 1;
+}
+.account-input-name input:focus ~ span,
+.account-input-name input:focus ~ button {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+  .modal-iframe {
+    width: 600px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+  .modal-iframe {
+    width: 360px;
+    height: 240px;
+  }
+}
+
+@tailwind utilities;
