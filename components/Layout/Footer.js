@@ -10,7 +10,7 @@ const Footer = () => {
 						<div className="w-full sm:w-1/2">
 								<div>
 									{/* <img src="/img/isotipo.png" alt="droptracker logo" className="h-12 mx-auto md:-ml-4" /> */}
-									<span className="block text-lg font-light font-bold h-30">DYDX Risk Calculator</span>
+									<span className="block text-lg font-light font-bold h-30 page-title">DYDX Risk Calculator</span>
 									
 								</div>
 								<span className="block pt-1 text-xs tracking-wider font-light">&copy;2020 Lightning Robot Inc. All rights reserved.</span>

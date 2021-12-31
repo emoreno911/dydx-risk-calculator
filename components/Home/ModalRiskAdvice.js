@@ -17,14 +17,14 @@ const ModalRiskAdvice = ({}) => {
 			)}
 		>
 			<div className="bg-color-accent pt-4 pb-8 px-8 rounded-md text-white">
-				<h4 className=" text-xl mb-6">Risk Management Daily Sheet advices</h4>
+				<h4 className=" text-xl mb-6">Risk Management Cheatsheet</h4>
 				<ul className="list-disc pl-4">
 					<li className="mb-4">Don't invest what you are not willing to lose.</li>
 					<li className="mb-4 hidden">Be true to your strategy. If you have already made your trading way calculations it's much better to modify before starting from zero.</li>
 					<li className="mb-4">Focus on analysis and not feelings.</li>
-					<li className="mb-4">Remember DYDX uses Cross Margin by default, this way all positions share your account balances as collateral.</li>
-					<li className="mb-4">Isolated Margin can be emulated by creating separate accounts (using a new wallet address)</li>
-					<li className="mb-4">Use Stop orders to limit your losses and set limit orders at price target</li>
+					<li className="mb-4">Remember DYDX uses <a href="/faq" className="underline">Cross Margin</a> by default, this way all positions share your account balances as collateral.</li>
+					<li className="mb-4"><a href="/faq" className="underline">Isolated Margin</a> can be emulated by creating separate accounts (using a new wallet address)</li>
+					<li className="mb-4">Use <a href="/faq" className="underline">Stop orders</a> to limit your losses and set limit orders at price target</li>
 					<li>
 						<span>In order to calculate your Position Size, you need to know your:</span>
 						<ol className="list-decimal pl-6 py-2">

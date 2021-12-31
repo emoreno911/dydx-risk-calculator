@@ -29,7 +29,7 @@ const DataContextProvider = (props) => {
 	const [oraclePrice, setOraclePrice] = useState(0)
 
 	useEffect(async () => {
-		const MARKETS = await (await fetch("https://api.stage.dydx.exchange/v3/markets")).json()
+		const MARKETS = await (await fetch("https://api.dydx.exchange/v3/markets")).json()
 		const mk = MARKETS['markets']
 		setMarkets(mk)
 		if (mk) {

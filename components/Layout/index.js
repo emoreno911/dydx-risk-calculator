@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
+const NEXT_PUBLIC_GOOGLE_ANALYTICS = "UA-42792810-1"
+
 function Layout({ 
 	children, 
 	metadata = null,
@@ -28,7 +30,26 @@ function Layout({
           </React.Fragment>
         )}
 
-				{/* <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet" /> */}
+				{/* Global Site Tag (gtag.js) - Google Analytics */}
+				<script
+					async
+					src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+				/>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+						if (window.location.hostname !== 'localhost')
+						{
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', '${NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+								page_path: window.location.pathname,
+							});
+						}
+						`,
+					}}
+				/>
 
 				<title>{title}</title>
 			</Head>

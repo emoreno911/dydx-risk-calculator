@@ -5,7 +5,7 @@ const FaqPage = () => {
 
 			<h3 className="text-lg mt-4 mb-2">What is DYDX Risk Calculator?</h3>
 			<p className="text-gray-300">
-			The risk calculator is a very useful tool that will help to create scenarios to improve the different trading strategies that can be used.
+			The risk calculator is a very useful tool that will help you to check different scenarios to improve your trading strategies and risk management while using DYDX Exchange.
 			</p>
 
 			<h3 className="text-lg mt-4 mb-2">How does Cross Margin work?</h3>
@@ -44,8 +44,17 @@ const FaqPage = () => {
 				margin provided, the trader is liquidated.
 			</p>
 
-			<h3 className="text-lg mt-4 mb-2">How liquidations are calculated?</h3>
-			<p className="text-gray-300">...&nbsp;</p>
+			<h3 className="text-lg mt-4 mb-2">Where the prices data feed come from?</h3>
+			<p className="text-gray-300">
+				The feed of prices comes from DYDX's public API&nbsp; 
+				<a href="https://api.dydx.exchange/v3/markets" target="_blank" className="underline">https://api.dydx.exchange/v3/markets</a>
+			</p>
+
+			<h3 className="text-lg mt-4 mb-2">Which formulas are we using to calculate values?</h3>
+			<p className="text-gray-300">
+				You can find those formulas in DYDX's docs&nbsp; 
+				<a href="https://docs.dydx.exchange/#margin" target="_blank" className="underline">https://docs.dydx.exchange/#margin</a>
+			</p>
 
 			<h3 className="text-lg mt-4 mb-2" id="#about">Who are we?</h3>
 			<p className="text-gray-300">

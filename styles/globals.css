@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
 html,
 body {
   background-color: #1c1c28;
@@ -28,6 +30,11 @@ body {
 header, main, footer {
   z-index: 10;
   position: relative;
+}
+
+.page-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
 }
 
 .color-alt {

@@ -17,9 +17,8 @@ const Header = () => {
 			<div className="flex flex-wrap -mx-2 overflow-hidden px-5 lg:px-2 my-2">
 
 				<div className="px-2 w-full overflow-hidden md:w-1/6 lg:w-1/3 xl:w-1/3 text-center md:text-left flex-grow">
-						<h1 className="font-bold text-2xl header-title">
+						<h1 className="font-bold text-2xl header-title page-title">
 							<a href="/">
-								{/* <img src="/img/isotipo.png" alt="droptracker logo" className="h-12 mx-auto md:-ml-4"  /> */}
 								DYDX Risk Calculator
 							</a>
 						</h1>
