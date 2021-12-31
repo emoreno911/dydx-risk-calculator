@@ -19,8 +19,8 @@ const Index = ({ markets = [] }) => {
     title: "DYDX Risk Calculator",
     description: "Simulate position risk for DYDX Exchange",
     image: "http://waybackblog.byethost32.com/wp-content/uploads/2020/11/onlineprinters-oIpJ8koLx_s-unsplash.jpg",
-    url: `https://headless-wp-blog-nextjs.vercel.app/`,
-    sitename: "dydxrisk",
+    url: `https://www.dydxriskcalculator.xyz/`,
+    sitename: "dydxriskcalculator",
   }
 
   return (
