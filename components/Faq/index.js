@@ -53,7 +53,8 @@ const FaqPage = () => {
 			<h3 className="text-lg mt-4 mb-2">Which formulas are we using to calculate values?</h3>
 			<p className="text-gray-300">
 				You can find those formulas in DYDX's docs&nbsp; 
-				<a href="https://docs.dydx.exchange/#margin" target="_blank" className="underline">https://docs.dydx.exchange/#margin</a>
+				<a href="https://docs.dydx.exchange/#margin" target="_blank" className="underline">https://docs.dydx.exchange/#margin. </a>
+				<span>By the moment we're not including fees and funding rates in calculations, so the numbers may have little delta in contrast with the ones in DYDX Exchange</span>
 			</p>
 
 			<h3 className="text-lg mt-4 mb-2" id="#about">Who are we?</h3>
