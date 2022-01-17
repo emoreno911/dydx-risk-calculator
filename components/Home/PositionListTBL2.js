@@ -30,7 +30,8 @@ const PositionItem = ({data, positions, accountCollateral, removePosition}) => {
 		<div className="row">
 			<div>
 				<span>
-					<DynamicModalPositionSetup market={market} />
+					{/* <DynamicModalPositionSetup market={market} /> */}
+					{market}
 				</span>
 			</div>
 			<div><span>{side}</span></div>

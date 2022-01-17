@@ -18,7 +18,7 @@ export const getMarketLeverage = (market) => {
 	const isBTC = market.indexOf('BTC') !== -1 
 	const isETH = market.indexOf('ETH') !== -1 
 
-	return isBTC || isETH ? 25 : 10
+	return isBTC || isETH ? 20 : 10
 }
 
 export const getLiquidationPrice = (size, oraclePrice, positions, accountCollateral) => {
