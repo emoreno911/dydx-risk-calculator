@@ -1,17 +1,17 @@
 import React, { useContext } from "react"
-import { getLiquidationPrice, getMaintenanceMarginRequirement, getPnlAndRoe, getPositionLeverage, toFixedIfNecessary } from "../utilities"
+import dynamic from 'next/dynamic'
 import { DataContext } from './context'
+import { 
+	getLiquidationPrice, 
+	getPnlAndRoe, 
+	getPositionLeverage, 
+	toFixedIfNecessary 
+} from "../utilities"
 
-const pos = {
-	market: 'BTC-USD',
-	side: 'LONG',
-	size: 0.001,
-	leverage: 2,
-	orderPrice: 46800,
-	liquidationPrice: 32000,
-	oraclePrice: 48500,
-	unrealizedPNL: -1000
-}
+const DynamicModalPositionSetup = dynamic(
+  () => import('./ModalPositionSetup'),
+  { ssr: false }
+)
 
 const PositionItem = ({data, positions, accountCollateral, removePosition}) => {
 	const {
@@ -28,7 +28,11 @@ const PositionItem = ({data, positions, accountCollateral, removePosition}) => {
 
 	return (
 		<div className="row">
-			<div><span>{market}</span></div>
+			<div>
+				<span>
+					<DynamicModalPositionSetup market={market} />
+				</span>
+			</div>
 			<div><span>{side}</span></div>
 			<div><span>{size}</span></div>
 			<div><span>{toFixedIfNecessary(leverage, 2)}X</span></div>
