@@ -13,7 +13,7 @@ const Footer = () => {
 									<span className="block text-lg font-light font-bold h-30 page-title">DYDX Risk Calculator</span>
 									
 								</div>
-								<span className="block pt-1 text-xs tracking-wider font-light">&copy;2022 Lightning Robot Inc. All rights reserved.</span>
+								<span className="block pt-1 text-xs tracking-wider font-light">Made with ❤️ by Lightning Robot Team</span>
 						</div>
 						<div className="w-full sm:w-1/2 text-center md:text-right mt-10 sm:mt-0">
 							<a href="#" title="Twitter" className="inline-block text-lg w-16 ml-6">
