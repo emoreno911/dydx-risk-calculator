@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## DYDX Risk Calculator
+
+The risk calculator is a very useful tool that will help you to check different scenarios to improve your trading strategies and risk management while using DYDX Exchange
 
 ## Getting Started
 
